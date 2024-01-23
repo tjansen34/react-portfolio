@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PortfolioProjectForm from "./PortfolioProjectForm";
+import PortfolioProjectForm from "./portfolioProjectForm";
 
 function Portfolio(props) {
   const [edit, setEdit] = useState({
@@ -16,7 +16,7 @@ function Portfolio(props) {
   };
 
   if (edit.id) {
-    return <PortfolioProjectFormForm edit={edit} onSubmit={submitUpdate} />;
+    return <PortfolioProjectForm edit={edit} onSubmit={submitUpdate} />;
   }
 
   return props.portfolio.map((item, i) => (

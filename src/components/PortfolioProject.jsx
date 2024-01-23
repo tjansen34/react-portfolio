@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PortfolioProjectForm from "./PortfolioProjectForm";
+import PortfolioProjectForm from "./portfolioProjectForm";
 import Portfolio from "./Portfolio";
 
 function PortfolioForm() {
@@ -7,7 +7,7 @@ function PortfolioForm() {
 
   // Function to add a project list item
   const addProjectItem = (item) => {
-    console.log('project item', item);
+    console.log("project item", item);
     // Check to see if the item text is empty
     if (!item.text) {
       return;
@@ -59,13 +59,13 @@ function PortfolioForm() {
   return (
     <div>
       <h1>What is on your Project Board?</h1>
-      <ProjectForm onSubmit={addProjectItem} />
-      <Project
+      <PortfolioProjectForm onSubmit={addProjectItem} />
+      <Portfolio
         project={project}
         completeProjectItem={completeProjectItem}
         removeProjectItem={removeProjectItem}
         editProjecttItem={editProjectItem}
-      ></Project>
+      ></Portfolio>
     </div>
   );
 }
