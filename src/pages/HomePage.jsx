@@ -1,17 +1,16 @@
-import React from "react";
-
 export default function HomePage() {
   return (
     <div className="container pt-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-        impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-        architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-        mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-        nostrum temporibus ad omnis nam rerum eligendi.
-      </p>
+      <h1>React Profile</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
+          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
+          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
+          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
+          nostrum temporibus ad omnis nam rerum eligendi.
+        </p>
       <section className="features-icons bg-light text-center m-4">
         <div className="container">
           <div className="row p-2">
@@ -22,7 +21,7 @@ export default function HomePage() {
                 </div>
                 <h3>Links to my Github</h3>
                 <p className="lead mb-0">Here is a link to my Github</p>
-                <li>https://github.com/tjansen34/react-portfolio</li>
+                <a>https://github.com/tjansen34/react-portfolio</a>
               </div>
             </div>
             <div className="col-lg-4">
@@ -32,8 +31,8 @@ export default function HomePage() {
                 </div>
                 <h3>Snippets of my work</h3>
                  <img
-                  src="/images/github-logo.png" 
-                  alt="GitHub Logo"
+                  src="../img/img1.jpg" 
+                  alt="Test image"
                   style={{ width: "100px", height: "100px" }}
                 />
                 <p className="lead mb-0">in the works</p>
