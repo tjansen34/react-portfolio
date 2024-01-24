@@ -1,10 +1,12 @@
 import "./App.css";
-import PortfolioForm from "./components/portfolioProject";
+import { Outlet } from "react-router-dom";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="portfolio-app">
-      <PortfolioForm />
+      <Nav />
+      <Outlet />
     </div>
   );
 }
