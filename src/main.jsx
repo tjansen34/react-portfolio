@@ -10,6 +10,7 @@ import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ContactForm from "./pages/ContactUs";
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "contact/:id",
+        element: <ContactForm />,
       },
       {
         path: "about",
